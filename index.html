@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa de Serviços</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <ul>
+                <li><h1>Studio</h1></li>
+                <li>Lista de Serviços</li>
+            </ul>
+        </header>
+
+        <section class="st">
+            <form>
+                <h3>Selecione o Serviço:</h3>
+                <ul>
+                    <li><input type="radio" id="corte" name="servicos"><label for="corte"> Corte</label></li>
+                    <li><input type="radio" id="progressiva" name="servicos"><label for="progressiva"> Progressiva</label></li>
+                    <li><input type="radio" id="unhas" name="servicos"><label for="unhas"> Unhas</label></li>
+                </ul>
+            </form>
+        </section>
+
+        <section class="nd">
+            <button id="vendas">Venda</button>
+            <button id="estorno">Estorno</button>
+        </section>
+
+        <section class="rd" id="table">
+            <table>
+                <tr class="tb" id="hd">
+                    <th>Serviço</th>
+                    <th>Quantidade</th>
+                    <th>Valor</th>
+                </tr>
+                <tr class="tb" id="mn1">
+                    <td>Corte</td>
+                    <td id="quantidadeCortes"></td>
+                    <td id="valorCortes"></td>
+                </tr>
+                <tr class="tb" id="mn2">
+                    <td>Progressiva</td>
+                    <td id="quantidadeProgressiva"></td>
+                    <td id="valorProgressiva"></td>
+                </tr>
+                <tr class="tb" id="mn3">
+                    <td>Unhas</td>
+                    <td id="quantidadeUnhas"></td>
+                    <td id="valorUnhas"></td>
+                </tr>
+            </table>
+        </section>
+        <!-- Arrumar PDF -->
+        <section class="th">
+            <button id="export">Planilha</button><button id="pdf">PDF*</button>
+        </section>
+    </div><!--container-->
+    
+    <script src="tableToExcel.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Source+Serif+Pro:wght@600&family=Supermercado+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Serif Pro', serif;
+}
+
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #8529e0;
+    background: linear-gradient(90deg, rgba(132,39,224,1) 0%, rgba(77,21,96,1) 84%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 80vh;
+    width: 70vw;
+    background-color: #C620F7;
+    border-radius: 30px;
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    height: 10vh;
+    width: 100%;
+    background-color: #ED1FDC;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px 30px 0 0;
+}
+
+header h1{
+    color: white;
+}
+
+form{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form li{
+    margin: 10px 0;
+    transition: 0.5s;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+form li:hover::after{
+    width: 100%;
+}
+
+.nd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nd button{
+    padding: 1rem;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0, 0.7);
+    border-style: none;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#vendas{
+    color: green;
+}
+
+#estorno{
+    color: red;
+}
+
+.nd button:hover{
+    padding: 1.1rem;
+    background-color: rgb(0, 0, 0);
+}
+
+.rd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+table th, td{
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.th{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 1.3rem;
+}
+
+.th button{
+    padding: 1rem;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0, 0.7);
+    border-style: none;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    color: wheat;
+}
+
+.th button:hover{
+    padding: 1.1rem;
+    background-color: rgb(0, 0, 0);
+}
+
+@media (max-width: 450px){
+    .st h3{
+        margin-top: 15px;
+    }
+
+    #vendas{
+        padding: 4px;
+        margin-top: 10px;
+    }
+
+    #estorno{
+        padding: 4px;
+        margin-top: 10px;
+    }
+
+    table{
+        margin-top: -8px;
+    }
+
+    table th, td{
+        padding: 3px;
+    }
+}
+
+
+
