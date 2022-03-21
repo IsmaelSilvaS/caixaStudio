@@ -65,10 +65,6 @@ form li{
     padding: 4px;
 }
 
-form li:hover::after{
-    width: 100%;
-}
-
 .nd{
     display: flex;
     justify-content: center;
@@ -79,11 +75,12 @@ form li:hover::after{
 .nd button{
     padding: 1rem;
     font-weight: bold;
-    background-color: rgb(0, 0, 0, 0.7);
+    background-color: black;
     border-style: none;
     border-radius: 10px;
     transition: 0.5s;
     cursor: pointer;
+    opacity: 0.8;
 }
 
 #vendas{
@@ -95,8 +92,7 @@ form li:hover::after{
 }
 
 .nd button:hover{
-    padding: 1.1rem;
-    background-color: rgb(0, 0, 0);
+    opacity: 1;
 }
 
 .rd{
@@ -123,17 +119,18 @@ table th, td{
 .th button{
     padding: 1rem;
     font-weight: bold;
-    background-color: rgb(0, 0, 0, 0.7);
+    background-color: black;
     border-style: none;
     border-radius: 10px;
     transition: 0.5s;
     cursor: pointer;
     color: wheat;
+    opacity: 0.8;
 }
 
 .th button:hover{
     padding: 1.1rem;
-    background-color: rgb(0, 0, 0);
+    opacity: 1;
 }
 
 @media (max-width: 450px){
